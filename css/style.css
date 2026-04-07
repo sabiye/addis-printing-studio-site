@@ -1,4 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: Montserrat;
+}
+
+p{
+    font-family: Roboto;
+}
+
+
+
 header{
     display: flex;
-    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    gap: 50px;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #0c56b8;
+}
+.btn{
+    color: black;
+    text-decoration: none;
+}
+.btn:visited{
+    color:black;
+}
+.hero{
+    text-align: center;
+    background-image: url('seattle.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height:500px 
+}
+.hero h1{
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 17.5px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+.hero a{
+    color: white;
+}
+
+
+.services{
+    padding-top: 0px;
+    text-align: center;
+}
+
+.serviceholder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.typeservices img{
+    height: 600px;
+} 
+body {
+    overflow-y: scroll;
 }
